@@ -22,17 +22,20 @@ header nav {
   flex-wrap: wrap;
 }
 
-header nav > a {
-  text-decoration: none;
-  color: var(--text-color-100);
-  
-  margin-right: 10px;
+header nav > ul,
+header nav > ul li,
+header nav ul li a {
   height: 100%;
+}
 
+header nav > ul {
+  list-style: none;
   display: flex;
-  align-items: center;
+  gap: 10px;
+}
 
-  transition: color ease 130ms;
+header nav > ul li {
+  text-decoration: none;
 
   position: relative;
 
@@ -41,7 +44,17 @@ header nav > a {
   overflow: hidden;
 }
 
-header nav > a::before {
+header nav > ul li a {
+  text-decoration: none;
+  color: var(--text-color-100);
+  
+  transition: color ease 130ms;
+
+  display: flex;
+  align-items: center;
+}
+
+header nav > ul li::before {
   content: '';
 
   z-index: -1;
@@ -58,19 +71,17 @@ header nav > a::before {
   transition: width ease 230ms;
 }
 
-header nav > a:hover {
+header nav > ul li a:hover {
   color: var(--text-color-200);
 }
 
-header nav > a:hover::before {
+header nav > ul li:hover::before {
   width: 100%;
 }
 
-header .menu-burger {
+header .menu-btn {
   height: 40px;
   width: 40px;
-
-  display: none;
 
   border: none;
   border-radius: 5px;
@@ -80,19 +91,25 @@ header .menu-burger {
 
   cursor: pointer;
 }
-header .menu-burger:hover {
+header .menu-btn:hover {
   background: var(--main-bg-color-400)
 }
 
-
-header .menu-burger img {
+header .menu-btn img {
   width: 100%;
   height: 100%;
 }
 
+header .menu-burger {
+  display: none;
+}
+header .menu-close {
+  display: none;
+}
+
 @media (max-width: 720px){
-  header {
-    position: relative;
+  header .menu-close {
+    display: block;
   }
 
   header .menu-burger {
@@ -106,9 +123,28 @@ header .menu-burger img {
     height: 100%;
 
     background-color: var(--main-bg-color-200);
-    top: 100%;
 
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
+
+    padding: 10px;
+
+    top: 0;
+  }
+
+  header > nav ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  header > nav ul li a {
+    padding: 10px;
+    width: 100%;
+  }
+
+  header nav > ul li {
+    width: 100%;
+    height: auto;
   }
 }
