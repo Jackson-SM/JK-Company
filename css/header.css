@@ -1,3 +1,109 @@
 header {
   height: 60px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+
+  background-color: var(--main-bg-color-200);
+}
+
+header .logo {
+  font-size: 30px;
+
+  color: var(--primary-color-100);
+
+  text-decoration: underline;
+}
+
+header nav {
+  height: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+header nav > a {
+  text-decoration: none;
+  color: var(--text-color-100);
+  
+  margin-right: 10px;
+  height: 100%;
+
+  display: flex;
+  align-items: center;
+
+  transition: color ease 130ms;
+
+  position: relative;
+
+  z-index: 1;
+
+  overflow: hidden;
+}
+
+header nav > a::before {
+  content: '';
+
+  z-index: -1;
+
+  position: absolute;
+
+  background-color: var(--primary-color-100);
+
+  width: 0;
+  height: 100%;
+
+  top: 96%;
+
+  transition: width ease 230ms;
+}
+
+header nav > a:hover {
+  color: var(--text-color-200);
+}
+
+header nav > a:hover::before {
+  width: 100%;
+}
+
+header .menu-burger {
+  height: 40px;
+  width: 40px;
+
+  display: none;
+
+  border: none;
+  border-radius: 5px;
+  background: var(--main-bg-color-300);
+
+  transition: background ease 100ms;
+
+  cursor: pointer;
+}
+header .menu-burger:hover {
+  background: var(--main-bg-color-400)
+}
+
+
+header .menu-burger img {
+  width: 100%;
+  height: 100%;
+}
+
+@media (max-width: 720px){
+  header {
+    position: relative;
+  }
+
+  header .menu-burger {
+    display: block;
+  }
+
+  header > nav {
+    position: absolute;
+
+    width: 100%;
+
+    background-color: var(--main-bg-color-200);
+  }
 }
