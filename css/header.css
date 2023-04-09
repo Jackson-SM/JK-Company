@@ -129,6 +129,11 @@ header .menu-close {
 
     padding: 10px;
 
+    top: -100%;
+
+    transition: top ease-in 300ms;
+  }
+  header > nav.open {
     top: 0;
   }
 
