@@ -8,6 +8,7 @@ header {
   background-color: var(--main-bg-color-200);
 }
 
+/* Logo */
 header .logo {
   font-size: 30px;
 
@@ -15,6 +16,8 @@ header .logo {
 
   text-decoration: underline;
 }
+
+/* Navbar */
 
 header nav {
   height: 100%;
@@ -27,6 +30,8 @@ header nav > ul li,
 header nav ul li a {
   height: 100%;
 }
+
+/* Links */
 
 header nav > ul {
   list-style: none;
@@ -79,6 +84,8 @@ header nav > ul li:hover::before {
   width: 100%;
 }
 
+/* Menu Button - Close and Burger */
+
 header .menu-btn {
   height: 40px;
   width: 40px;
@@ -106,6 +113,8 @@ header .menu-burger {
 header .menu-close {
   display: none;
 }
+
+/* Media Query */
 
 @media (max-width: 720px){
   header .menu-close {

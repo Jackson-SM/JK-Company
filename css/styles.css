@@ -23,6 +23,10 @@ body, html {
   font-family: "Poppins", sans-serif;
 }
 
+html {
+  font-size: 62.5%;
+}
+
 body {
   background-color: var(--main-bg-color-100);
 }
