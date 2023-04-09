@@ -1,5 +1,5 @@
 header {
-  height: 60px;
+  height: 6em;
 
   display: flex;
   align-items: center;
@@ -10,7 +10,7 @@ header {
 
 /* Logo */
 header .logo {
-  font-size: 30px;
+  font-size: 3rem;
 
   color: var(--primary-color-100);
 
@@ -36,7 +36,7 @@ header nav ul li a {
 header nav > ul {
   list-style: none;
   display: flex;
-  gap: 10px;
+  gap: 2em;
 }
 
 header nav > ul li {
@@ -57,6 +57,8 @@ header nav > ul li a {
 
   display: flex;
   align-items: center;
+
+  font-size: 1.5rem;
 }
 
 header nav > ul li::before {

@@ -29,4 +29,11 @@ html {
 
 body {
   background-color: var(--main-bg-color-100);
+  color: var(--text-color-100);
+}
+
+@media (max-width: 720px) {
+  html {
+    font-size: 50%;
+  }
 }

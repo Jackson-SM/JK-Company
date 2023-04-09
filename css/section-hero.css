@@ -1,0 +1,31 @@
+.section-hero {
+  background: linear-gradient(to top,var(--main-bg-color-100), transparent 50%),url('../assets/section-hero.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 80vh;
+
+  padding: 20px;
+
+  text-align: center;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.section-hero > h1 {
+  font-size: 4.5rem;
+  max-width: 50%;
+
+  margin-bottom: 20px;
+}
+
+.section-hero > h1 span {
+  color: var(--primary-color-200)
+}
+
+.section-hero > p {
+  font-size: 1.5rem;
+  max-width: 50%;
+}
