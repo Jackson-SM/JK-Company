@@ -1,0 +1,50 @@
+header .switch {
+  width: 60px;
+  height: 10px;
+  font-size: 1.6rem;
+
+  position: relative;
+
+  outline: none;
+  background: none;
+  border: none;
+
+  position: relative;
+  
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 5px;
+
+  cursor: pointer;
+
+  background: var(--main-bg-color-300);
+
+  font-family: "Poppins", sans-serif;
+
+  z-index: 1;
+}
+
+header .switch::before {
+  content: '';
+
+  position: absolute;
+
+  z-index: -1;
+
+  background: var(--main-bg-color-400);
+
+  width: 25px;
+  height: 25px;
+
+  border-radius: 50%;
+
+  left: 0;
+
+  transition: left ease 200ms;
+}
+
+header .switch.dark::before {
+  left: 60%;
+}

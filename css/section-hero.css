@@ -17,6 +17,8 @@
   max-width: 50%;
 
   margin-bottom: 30px;
+
+  text-shadow: rgba(0, 0, 0, 0.131) 1px 0 20px;
 }
 
 .section-hero > h1 span {

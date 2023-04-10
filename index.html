@@ -9,6 +9,7 @@
   <link rel="stylesheet" href="css/header.css">
   <link rel="stylesheet" href="css/section-hero.css">
   <link rel="stylesheet" href="css/section-services.css">
+  <link rel="stylesheet" href="css/switch.css">
   <title>JK Company</title>
 </head>
 <body>
@@ -23,17 +24,16 @@
       </ul>
       
       <button class="menu-btn menu-close">
-        <img src="./assets/icons/menu-close.svg" />
+        <svg width="800px" height="800px" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path fill="currentColor" fill-rule="evenodd" clip-rule="evenodd" d="M19.207 6.207a1 1 0 0 0-1.414-1.414L12 10.586 6.207 4.793a1 1 0 0 0-1.414 1.414L10.586 12l-5.793 5.793a1 1 0 1 0 1.414 1.414L12 13.414l5.793 5.793a1 1 0 0 0 1.414-1.414L13.414 12l5.793-5.793z" /></svg>
       </button>
     </nav>
     <button class="menu-btn menu-burger">
-      <img src="./assets/icons/menu-burger.svg" />
+      <svg width="800px" height="800px" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+        <path fill="currentColor" fill-rule="evenodd" clip-rule="evenodd" d="M3 6C3 5.44772 3.44772 5 4 5H20C20.5523 5 21 5.44772 21 6C21 6.55228 20.5523 7 20 7H4C3.44772 7 3 6.55228 3 6ZM3 12C3 11.4477 3.44772 11 4 11H20C20.5523 11 21 11.4477 21 12C21 12.5523 20.5523 13 20 13H4C3.44772 13 3 12.5523 3 12ZM3 18C3 17.4477 3.44772 17 4 17H20C20.5523 17 21 17.4477 21 18C21 18.5523 20.5523 19 20 19H4C3.44772 19 3 18.5523 3 18Z" />
+      </svg>      
     </button>
 
-    <button class="switch">
-      <img src="./assets/icons/theme/theme-moon.svg" />
-      <img src="./assets/icons/theme/theme-sun.svg" />
-    </button>
+    <button class="switch"></button>
   </header>
   <main>
 
@@ -63,5 +63,6 @@
 
   <script src="./js/header-responsive.js"></script>
   <script src="./js/toggleThemeMode.js"></script>
+  <script src="./js/switchTheme.js"></script>
 </body>
 </html>
