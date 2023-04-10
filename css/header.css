@@ -129,7 +129,7 @@ header .menu-close {
   }
 
   header > nav {
-    position: absolute;
+    position: fixed;
 
     width: 100%;
     height: 100%;
@@ -144,6 +144,8 @@ header .menu-close {
     top: -100%;
 
     transition: top ease-in 300ms;
+
+    z-index: 2
   }
   header > nav.open {
     top: 0;
