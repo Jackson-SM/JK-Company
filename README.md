@@ -27,5 +27,8 @@
    ### Observer Intersection
    > O conceito de Observer Intersection é utilizado para detectar quando as seções do site estão visíveis na tela do usuário. Isso é feito usando a API Intersection Observer do JavaScript, que permite observar mudanças na interseção de um elemento com o viewport do navegador. Quando uma seção se torna visível na tela do usuário, as animações CSS correspondentes são ativadas para adicionar efeitos visuais e interativos.
 
+   ### Formulário de Contato
+   > O site da companhia aérea inclui um formulário de contato que permite aos usuários entrarem em contato com a empresa. Para implementar o formulário, foi utilizada a API do Formspree **(https://formspree.io)** para lidar com o envio dos dados do formulário. O JavaScript foi utilizado juntamente com a Fetch API para fazer a requisição de envio do formulário para o endpoint do Formspree.
+
 # Conclusão
  > O projeto de documentação da companhia aérea envolve o uso de HTML, CSS e JavaScript para criar um site responsivo com detalhes técnicos, como a implementação de dark mode, seções informativas sobre os serviços da empresa, animações CSS e o uso do Observer Intersection para animar as seções. Esses recursos técnicos ajudarão a tornar o site mais atra
