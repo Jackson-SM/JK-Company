@@ -104,10 +104,9 @@ header .menu-btn:hover {
   background: var(--main-bg-color-400)
 }
 
-header .menu-btn svg {
+header .menu-btn img {
   width: 100%;
   height: 100%;
-  color: var(--text-color-200);
 }
 
 

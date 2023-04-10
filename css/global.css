@@ -2,12 +2,15 @@
 
 :root {
   --main-bg-color-100: #f5ffff;
-  --main-bg-color-200: #f6f6f6;
+  --main-bg-color-200: #e6e6e6;
   --main-bg-color-300: #ebebeb;
   --main-bg-color-400: #dadada;
 
+  --main-bg-color-transparence-100: #dadada9d;
+
   --text-color-100: #393939;
   --text-color-200: #6d6d6d;
+  --text-color-200: #878787;
 
   --primary-color-100: #5cabff;
   --primary-color-200: #79baff;
@@ -27,8 +30,11 @@ html.dark {
   --main-bg-color-300: #606363;
   --main-bg-color-400: #797b7b;
   
+  --main-bg-color-transparence-100: #272929c8;
+  
   --text-color-100: #f9f9f9;
   --text-color-200: #dedede;
+  --text-color-300: #bcbcbc;
 }
 
 body {
