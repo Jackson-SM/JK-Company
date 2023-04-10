@@ -9,7 +9,7 @@ header {
 }
 
 /* Logo */
-header .logo {
+.logo {
   font-size: 3rem;
 
   color: var(--primary-color-100);

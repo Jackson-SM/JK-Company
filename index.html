@@ -12,6 +12,8 @@
   <link rel="stylesheet" href="css/switch.css">
   <link rel="stylesheet" href="css/section-apresentation.css">
   <link rel="stylesheet" href="css/section-companies.css">
+  <link rel="stylesheet" href="css/footer.css">
+  <link rel="stylesheet" href="css/notification.css">
   <title>JK Company</title>
 </head>
 <body>
@@ -135,9 +137,60 @@
     </section>
 
   </main>
+  <footer>
+    <div>
+      <span class="logo">JK Company</span>
+    </div>
+    <div class="form-footer">
+      <h3>Formulário de Contato</h3>
+      <form action="https://formspree.io/f/myyabenw" method="POST" class="form-contact">
+        <fieldset>
+          <label for="name">
+            Name:
+          </label>
+          <input type="text" name="name" id="name" required>
+        </fieldset>
+        <fieldset>
+          <label for="email">
+            Email:
+          </label>
+          <input type="email" name="email" id="email" required>
+        </fieldset>
+        <fieldset>
+          <label for="subject">
+            Assunto:
+          </label>
+          <input type="text" name="subject" id="subject" required>
+        </fieldset>
+       <fieldset>
+        <label for="message">
+          Mensagem:
+        </label>
+        <textarea cols="30" rows="5" name="message" id="message" required></textarea>
+       </fieldset>
+  
+        <button type="submit" class="btn-submit-contact">Enviar</button>
+      </form>
+    </div>
+    <div>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#sobrenos">Sobre nós</a></li>
+        <li><a href="#precos">Preços</a></li>
+        <li><a href="#contato">Contato</a></li>
+      </ul>
+    </div>
+  </footer>
+
+  <div class="notification-email close">
+    <img src="./assets/icons/notification.svg" />
+    <span class="message-email">Email Recebido Com sucesso!</span>
+  </div>
 
   <script src="./js/header-responsive.js"></script>
   <script src="./js/toggleThemeMode.js"></script>
   <script src="./js/switchTheme.js"></script>
+  <script src="./js/notification.js"></script>
+  <script src="./js/formRequestAPIEmail.js"></script>
 </body>
 </html>
