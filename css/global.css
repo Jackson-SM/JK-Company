@@ -43,7 +43,8 @@ body {
   color: var(--text-color-100);
 }
 
-section > * {
+section > *,
+footer {
   opacity: 0;
   transform: translateY(-80px);
   transition: transform ease 1s, opacity ease 1s;
