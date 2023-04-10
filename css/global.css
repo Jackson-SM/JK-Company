@@ -45,13 +45,13 @@ body {
 
 section > * {
   opacity: 0;
-  transform: translateX(-40px);
-  transition: all ease 1s;
+  transform: translateY(-80px);
+  transition: transform ease 1s, opacity ease 1s;
 }
 
 .show {
   opacity: 1;
-  transform: translateX(0);
+  transform: translateY(0);
 }
 
 /*

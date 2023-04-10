@@ -54,7 +54,7 @@ footer form {
   flex-direction: column;
   font-size: 1.5rem;
 
-  gap: 10px;
+  gap: 20px;
 }
 
 footer form fieldset {
