@@ -5,7 +5,10 @@ function verifyThemeAndSetInSwitch(){
     switchTheme.classList.add("dark")
   }
 }
-verifyThemeAndSetInSwitch()
+
+window.onload = function(){
+  verifyThemeAndSetInSwitch()
+}
 
 switchTheme.addEventListener('click', (event) => {
   event.target.classList.toggle("dark");
