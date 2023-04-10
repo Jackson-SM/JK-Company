@@ -19,6 +19,8 @@
   padding: 10px;
 
   transition: all ease-in 130ms;
+
+  cursor: pointer;
 }
 
 .notification-email:hover {

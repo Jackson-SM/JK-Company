@@ -11,6 +11,44 @@ footer {
   justify-content: space-around;
 }
 
+
+footer .footer-links-container h3,
+footer .footer-networks-container h3 {
+  font-size: 2em;
+  margin-bottom: 25px;
+  color: var(--text-color-300)
+}
+footer .footer-links,
+footer .footer-networks {
+  list-style: none;
+}
+footer .footer-links li,
+footer .footer-networks li{
+  margin-bottom: 15px;
+}
+footer .footer-links li a,
+footer .footer-networks li a{
+  text-decoration: none;
+  color: var(--text-color-100);
+  font-size: 1.4em;
+}
+footer .footer-links li a:hover,
+footer .footer-networks li a:hover {
+  text-decoration: none;
+  color: var(--text-color-200);
+}
+
+footer .footer-networks li a {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+footer .footer-networks li a img {
+  width: 20px;
+  height: 20px;
+}
+
 footer form {
   display: flex;
   flex-direction: column;
@@ -47,26 +85,35 @@ footer form input {
 }
 
 footer form button[type="submit"] {
-  width: max-content;
-  padding: 10px;
+  padding: 15px;
   font-family: "Poppins", sans-serif;
   
   background: var(--primary-color-100);
   border: none;
   outline: none;
 
-  color: var(--text-color-100);
+  color: white;
   border-radius: 3px;
 
-  width: 50%;
-  margin: 0 auto;
-
   cursor: pointer;
+
+  transition: background ease 130ms;
+}
+
+footer form button[type="submit"]:hover {
+  background: var(--primary-color-200)
 }
 
 @media (max-width: 768px){
   footer {
     flex-direction: column;
     gap: 30px;
+    align-items: center;
+  }
+
+  footer .footer-links,
+  footer .footer-networks {
+    display: flex;
+    gap: 10px;
   }
 }

@@ -18,6 +18,7 @@
 
 body, html {
   font-family: "Poppins", sans-serif;
+  scroll-behavior: smooth;
 }
 
 html {
@@ -40,6 +41,17 @@ html.dark {
 body {
   background-color: var(--main-bg-color-100);
   color: var(--text-color-100);
+}
+
+section > * {
+  opacity: 0;
+  transform: translateX(-40px);
+  transition: all ease 1s;
+}
+
+.show {
+  opacity: 1;
+  transform: translateX(0);
 }
 
 /*

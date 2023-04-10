@@ -1,4 +1,4 @@
-#section-services {
+.section-services {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
   gap: 2em;
@@ -6,7 +6,7 @@
   padding: 10px;
 }
 
-#section-services .service {
+.section-services .service {
   width: 100%;
   height: 200px;
   max-width: 70%;
@@ -20,18 +20,26 @@
 
   box-shadow: 0 0 30px 2px var(--main-bg-color-transparence-100);
 
+  transition: box-shadow ease 400ms;
+  transition: transform ease 200ms;
+
 }
 
-#section-services .service h3 {
+.section-services .service:hover {
+  box-shadow: 0 0 30px 2px var(--main-bg-color-200);
+  transform: scale(1.04);
+}
+
+.section-services .service h3 {
   font-size: 2em;
   margin-bottom: 10px;
   color: var(--text-color-200)
 }
-#section-services .service p {
+.section-services .service p {
   font-size: 1.3em;
   color: var(--text-color-300)
 }
-#section-services .service img {
+.section-services .service img {
   width: 6rem;
   height: 6rem;
 
