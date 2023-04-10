@@ -1,0 +1,55 @@
+.section-companies {
+  display: flex;
+  justify-content: space-around;
+
+  padding: 20px;
+  gap: 20px;
+}
+
+.section-companies .content-companies {
+  width: 100%;
+}
+.section-companies .cards-companies {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 10px;
+  width: 100%;
+}
+
+.section-companies .content-companies h3 {
+  font-size: 3rem;
+
+  margin-bottom: 20px;
+}
+.section-companies .content-companies p {
+  width: 100%;
+  font-size: 1.6rem;
+  color: var(--text-color-200);
+  max-width: 100%;
+}
+
+.section-companies .cards-companies .card-company {
+  width: 10rem;
+  height: 10rem;
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  border-radius: 5px;
+  margin: 0 auto;
+}
+.section-companies .cards-companies .card-company:hover {
+  background: var(--main-bg-color-200)
+}
+.section-companies .cards-companies .card-company img {
+  width: 100%;
+}
+
+@media (max-width: 720px) {
+  .section-companies {
+    flex-direction: column;
+  }
+  .section-companies .cards-companies {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
