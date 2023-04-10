@@ -1,19 +1,21 @@
 .section-companies {
   display: flex;
   justify-content: space-around;
+  align-items: center;
 
   padding: 20px;
   gap: 20px;
 }
 
 .section-companies .content-companies {
-  width: 100%;
+  width: 50%;
 }
 .section-companies .cards-companies {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-template-columns: repeat(3, minmax(200px, 200px));
   gap: 10px;
-  width: 100%;
+  width: 50%;
+  place-content: center;
 }
 
 .section-companies .content-companies h3 {
@@ -22,10 +24,10 @@
   margin-bottom: 20px;
 }
 .section-companies .content-companies p {
-  width: 100%;
   font-size: 1.6rem;
   color: var(--text-color-200);
   max-width: 100%;
+  min-width: 50%;
 }
 
 .section-companies .cards-companies .card-company {
@@ -36,6 +38,10 @@
   padding: 10px;
   border-radius: 5px;
   margin: 0 auto;
+
+  transition: background ease 130ms;
+
+  box-shadow: 0 0 20px 2px var(--main-bg-color-transparence-100);
 }
 .section-companies .cards-companies .card-company:hover {
   background: var(--main-bg-color-200)
@@ -44,12 +50,20 @@
   width: 100%;
 }
 
-@media (max-width: 720px) {
+@media (max-width: 980px) {
   .section-companies {
     flex-direction: column;
   }
   .section-companies .cards-companies {
     display: flex;
     flex-wrap: wrap;
+    width: 100%;
+  }
+  .section-companies .content-companies {
+    width: 100%;
+  }
+
+  .section-companies .cards-companies .card-company {
+    margin: 0 0;
   }
 }
