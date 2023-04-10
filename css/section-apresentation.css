@@ -6,7 +6,7 @@
 
   margin: 40px 0;
 
-  background: linear-gradient(to top, var(--main-bg-color-200), transparent, transparent);
+  background: linear-gradient(to top, var(--main-bg-color-200), transparent 10%);
 }
 .section-apresentation::before {
   content: '';
