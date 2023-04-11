@@ -17,12 +17,9 @@
   
   background: var(--main-bg-color-100);
 
-
   box-shadow: 0 0 30px 2px var(--main-bg-color-transparence-100);
 
-  transition: box-shadow ease 400ms;
-  transition: transform ease 200ms;
-
+  transition: transform ease 200ms, box-shadow ease 130ms;
 }
 
 .section-services .service:hover {
@@ -42,8 +39,6 @@
 .section-services .service img {
   width: 6rem;
   height: 6rem;
-
-  margin-top: -10%;
 
   background: var(--main-bg-color-200);
   fill: var(--primary-color-100);
